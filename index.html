@@ -1,50 +1,85 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sibam | Video Editor</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-  <h1>SIBAM</h1>
-  <p>Professional Video Editor</p>
-  <a href="#portfolio" class="btn">⚡ View My Work</a>
+<!-- HERO SECTION -->
+<header class="hero">
+  <div class="overlay"></div>
+  <div class="hero-content">
+    <h1>SIBAM</h1>
+    <p>Professional Video Editor</p>
+    <a href="#portfolio" class="btn">⚡ View My Work</a>
+  </div>
 </header>
 
+<!-- ABOUT -->
 <section class="about">
   <h2>About Me</h2>
-  <p>I turn raw footage into cinematic lightning-powered edits.
-     Specializing in gaming, reels, and high-energy transitions.</p>
+  <p>
+    I transform raw footage into high-energy cinematic edits.
+    Specialized in gaming montages, reels, and beat sync transitions.
+  </p>
 </section>
 
+<!-- SERVICES -->
 <section class="services">
   <h2>Services</h2>
-  <div class="card">⚡ Reels & Shorts Editing</div>
-  <div class="card">⚡ Gaming Montages</div>
-  <div class="card">⚡ AMV Edits</div>
-  <div class="card">⚡ Cinematic Color Grading</div>
+  <div class="service-grid">
+    <div class="card">⚡ Reels & Shorts</div>
+    <div class="card">⚡ Gaming Montages</div>
+    <div class="card">⚡ AMV Editing</div>
+    <div class="card">⚡ Color Grading</div>
+  </div>
 </section>
 
-<section id="portfolio">
-  <h2>My Work</h2>
-  <div class="portfolio-card">Project 1 - Add YouTube Embed</div>
-  <div class="portfolio-card">Project 2 - Add Instagram Reel</div>
-  <div class="portfolio-card">Project 3 - Add Drive Link</div>
+<!-- PORTFOLIO -->
+<section id="portfolio" class="portfolio">
+  <h2>My Projects</h2>
+
+  <div class="portfolio-grid">
+
+    <!-- PROJECT 1 -->
+    <div class="project">
+      <iframe 
+        src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+        frameborder="0"
+        allowfullscreen>
+      </iframe>
+      <h3>Gaming Montage</h3>
+    </div>
+
+    <!-- PROJECT 2 -->
+    <div class="project">
+      <iframe 
+        src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+        frameborder="0"
+        allowfullscreen>
+      </iframe>
+      <h3>Reel Edit</h3>
+    </div>
+
+  </div>
 </section>
 
+<!-- CONTACT -->
 <section class="contact">
   <h2>Contact</h2>
   <p>Discord: sibam#0001</p>
   <p>Instagram: @sibam_edits</p>
 </section>
 
+<!-- FOOTER -->
 <footer>
   <p>© 2026 Sibam Portfolio</p>
   <p class="vortex">Powered by Vortex ⚡</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
