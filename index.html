@@ -13,83 +13,89 @@
 <body>
 
 <!-- HERO -->
-<section class="hero">
+<section class="hero reveal">
   <div class="hero-content">
     <h1>SIBAM</h1>
     <h2>Professional Video Editor</h2>
-    <p>Crafting cinematic edits with precision and energy.</p>
+    <p>Cinematic edits. Clean transitions. Powerful impact.</p>
     <a href="#portfolio" class="btn">View My Work</a>
+    <a href="#order" class="btn order-btn">Place Order</a>
   </div>
 </section>
 
 <!-- ABOUT -->
-<section class="about">
+<section class="about reveal">
   <h2>About Me</h2>
   <p>
-    I specialize in high-impact gaming edits, short-form content, and cinematic storytelling.
-    My goal is simple — make every frame powerful.
+    I specialize in high-impact gaming edits, reels, and cinematic storytelling.
+    Every frame matters.
   </p>
 </section>
 
 <!-- SERVICES -->
-<section class="services">
+<section class="services reveal">
   <h2>Services</h2>
-
   <div class="service-grid">
     <div class="card">
       <h3>Reels & Shorts</h3>
-      <p>High-retention vertical edits for social media.</p>
+      <p>High-retention vertical edits.</p>
     </div>
-
     <div class="card">
       <h3>Gaming Montages</h3>
-      <p>Beat-synced, cinematic, engaging gameplay edits.</p>
+      <p>Beat synced and cinematic.</p>
     </div>
-
     <div class="card">
       <h3>AMV Editing</h3>
-      <p>Smooth transitions, impact effects, storytelling.</p>
+      <p>Smooth and energetic transitions.</p>
     </div>
-
     <div class="card">
       <h3>Color Grading</h3>
-      <p>Professional cinematic tones and visual polish.</p>
+      <p>Professional cinematic look.</p>
     </div>
   </div>
 </section>
 
 <!-- PORTFOLIO -->
-<section id="portfolio" class="portfolio">
+<section id="portfolio" class="portfolio reveal">
   <h2>Featured Projects</h2>
-
   <div class="portfolio-grid">
 
     <div class="project">
-      <iframe 
-        src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
-        frameborder="0"
-        allowfullscreen>
-      </iframe>
+      <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+        frameborder="0" allowfullscreen></iframe>
       <h3>Gaming Montage</h3>
     </div>
 
     <div class="project">
-      <iframe 
-        src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
-        frameborder="0"
-        allowfullscreen>
-      </iframe>
+      <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+        frameborder="0" allowfullscreen></iframe>
       <h3>Instagram Reel</h3>
     </div>
 
   </div>
 </section>
 
-<!-- CONTACT -->
-<section class="contact">
-  <h2>Let's Work Together</h2>
-  <p>Discord: sibam#0001</p>
-  <p>Instagram: @sibam_edits</p>
+<!-- ORDER SECTION -->
+<section id="order" class="order reveal">
+  <h2>Place Your Order</h2>
+
+  <form action="https://formsubmit.co/YOUR_EMAIL@gmail.com" method="POST">
+    
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    
+    <select name="service">
+      <option value="Reels">Reels Editing</option>
+      <option value="Gaming">Gaming Montage</option>
+      <option value="AMV">AMV Edit</option>
+      <option value="Color Grading">Color Grading</option>
+    </select>
+
+    <textarea name="details" placeholder="Project Details..." required></textarea>
+
+    <button type="submit">Submit Order ⚡</button>
+
+  </form>
 </section>
 
 <!-- FOOTER -->
@@ -98,5 +104,6 @@
   <p class="vortex">Designed & Watermarked by Vortex ⚡</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
