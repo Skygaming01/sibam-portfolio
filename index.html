@@ -5,7 +5,7 @@
   <title>Sibam | Video Editor</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Google Fonts -->
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;600&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
@@ -18,8 +18,11 @@
     <h1>SIBAM</h1>
     <h2>Professional Video Editor</h2>
     <p>Cinematic edits. Clean transitions. Powerful impact.</p>
-    <a href="#portfolio" class="btn">View My Work</a>
-    <a href="#order" class="btn order-btn">Place Order</a>
+
+    <div class="hero-buttons">
+      <a href="#portfolio" class="btn">View Work</a>
+      <a href="#order" class="btn secondary">Place Order</a>
+    </div>
   </div>
 </section>
 
@@ -27,30 +30,34 @@
 <section class="about reveal">
   <h2>About Me</h2>
   <p>
-    I specialize in high-impact gaming edits, reels, and cinematic storytelling.
-    Every frame matters.
+    I specialize in high-impact gaming edits, short-form content,
+    and cinematic storytelling. Every frame matters.
   </p>
 </section>
 
 <!-- SERVICES -->
 <section class="services reveal">
   <h2>Services</h2>
-  <div class="service-grid">
+
+  <div class="grid">
     <div class="card">
       <h3>Reels & Shorts</h3>
       <p>High-retention vertical edits.</p>
     </div>
+
     <div class="card">
       <h3>Gaming Montages</h3>
       <p>Beat synced and cinematic.</p>
     </div>
+
     <div class="card">
       <h3>AMV Editing</h3>
       <p>Smooth and energetic transitions.</p>
     </div>
+
     <div class="card">
       <h3>Color Grading</h3>
-      <p>Professional cinematic look.</p>
+      <p>Professional cinematic tones.</p>
     </div>
   </div>
 </section>
@@ -58,17 +65,18 @@
 <!-- PORTFOLIO -->
 <section id="portfolio" class="portfolio reveal">
   <h2>Featured Projects</h2>
-  <div class="portfolio-grid">
+
+  <div class="grid">
 
     <div class="project">
       <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
-        frameborder="0" allowfullscreen></iframe>
+        allowfullscreen></iframe>
       <h3>Gaming Montage</h3>
     </div>
 
     <div class="project">
       <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
-        frameborder="0" allowfullscreen></iframe>
+        allowfullscreen></iframe>
       <h3>Instagram Reel</h3>
     </div>
 
@@ -80,21 +88,20 @@
   <h2>Place Your Order</h2>
 
   <form action="https://formsubmit.co/YOUR_EMAIL@gmail.com" method="POST">
-    
+
     <input type="text" name="name" placeholder="Your Name" required>
     <input type="email" name="email" placeholder="Your Email" required>
-    
+
     <select name="service">
-      <option value="Reels">Reels Editing</option>
-      <option value="Gaming">Gaming Montage</option>
-      <option value="AMV">AMV Edit</option>
-      <option value="Color Grading">Color Grading</option>
+      <option>Reels Editing</option>
+      <option>Gaming Montage</option>
+      <option>AMV Edit</option>
+      <option>Color Grading</option>
     </select>
 
-    <textarea name="details" placeholder="Project Details..." required></textarea>
+    <textarea name="details" placeholder="Project details..." required></textarea>
 
     <button type="submit">Submit Order ⚡</button>
-
   </form>
 </section>
 
@@ -106,4 +113,5 @@
 
 <script src="script.js"></script>
 </body>
+</html></body>
 </html>
