@@ -3,6 +3,19 @@ body {
   background: #0f0f0f;
   color: white;
   font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Scroll Reveal Base */
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* HERO */
@@ -18,32 +31,18 @@ body {
 .hero h1 {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 90px;
-  letter-spacing: 5px;
   color: #ffc300;
 }
 
-.hero h2 {
-  font-family: 'Playfair Display', serif;
-  font-weight: 500;
-  margin-top: -15px;
-}
-
-.hero p {
-  margin-top: 15px;
-  font-weight: 300;
-  color: #ccc;
-}
-
 .btn {
-  display: inline-block;
-  margin-top: 25px;
+  margin: 10px;
   padding: 12px 30px;
   background: #ffc300;
   color: black;
   text-decoration: none;
   font-weight: 600;
   border-radius: 30px;
-  transition: 0.3s ease;
+  transition: 0.3s;
 }
 
 .btn:hover {
@@ -51,61 +50,89 @@ body {
   box-shadow: 0 10px 25px rgba(255,195,0,0.4);
 }
 
-/* SECTIONS */
+.order-btn {
+  background: transparent;
+  border: 2px solid #ffc300;
+  color: #ffc300;
+}
+
 section {
   padding: 100px 20px;
   text-align: center;
 }
 
-h2 {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 45px;
-  margin-bottom: 30px;
-  letter-spacing: 2px;
-}
-
-/* SERVICES */
-.service-grid {
+.service-grid,
+.portfolio-grid {
   display: flex;
   justify-content: center;
   gap: 25px;
   flex-wrap: wrap;
 }
 
-.card {
-  background: #1c1c1c;
-  padding: 30px;
-  width: 250px;
-  border-radius: 20px;
-  transition: 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 35px rgba(255,195,0,0.2);
-}
-
-/* PORTFOLIO */
-.portfolio-grid {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
-}
-
+.card,
 .project {
   background: #1c1c1c;
-  padding: 20px;
+  padding: 25px;
   border-radius: 20px;
-  width: 350px;
-  transition: 0.3s ease;
+  width: 300px;
+  transition: 0.3s;
 }
 
 .project iframe {
   width: 100%;
-  height: 220px;
+  height: 200px;
   border-radius: 15px;
 }
+
+.card:hover,
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(255,195,0,0.2);
+}
+
+/* ORDER FORM */
+form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, select, textarea {
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-family: 'Poppins';
+}
+
+textarea {
+  min-height: 120px;
+}
+
+button {
+  padding: 12px;
+  border: none;
+  background: #ffc300;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  box-shadow: 0 10px 25px rgba(255,195,0,0.4);
+}
+
+footer {
+  background: black;
+  padding: 30px;
+}
+
+.vortex {
+  color: #ffc300;
+}}
 
 .project:hover {
   transform: scale(1.03);
